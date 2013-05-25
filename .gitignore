@@ -1,11 +1,3 @@
-bin/
-gen/
-.idea/
-.settings/
-out/
-build/
-TBRPaste.iml
 local.properties
-.gradle
-TBRPaste-release.apk
 Thumbs.db
+TBRPaste/TBRPaste-TBRPaste.apk

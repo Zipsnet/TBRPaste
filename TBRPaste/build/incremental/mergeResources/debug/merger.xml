@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res" >
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values-sw720dp-land/dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="paste_noText" >Please fill in the text boxes
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="pref_clipboard_summary" >Automatically copy the paste URL to the clipboard
+                </string>
+                <string name="pref_name" >Name
+                </string>
+                <string name="paste_url_label" >Paste URL:
+                </string>
+                <string name="paste_content" >Paste Content:
+                </string>
+                <string name="paste_button" >Paste!
+                </string>
+                <string name="app_name_short" >TBR Paste
+                </string>
+                <string name="paste_upload" >Uploading paste. Please wait
+                </string>
+                <string name="pref_clipboard" >Copy to clipboard
+                </string>
+                <string name="paste_name" >Paste Name:
+                </string>
+                <string name="app_name" >Team BlueRidge Paste
+                </string>
+                <string name="pref_name_summary" >Your name to be shown on pastes
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="paste_toast" >Paste URL has been copied to the clipboard.
+                </string>
+                <string name="paste_url" ></string>
+            </file>
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values-sw600dp/dimens.xml"
+                qualifiers="sw600dp" />
+            <file
+                name="ic_launcher"
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="ic_launcher"
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="main"
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/menu/main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_launcher"
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="activity_main"
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values-de/strings.xml"
+                qualifiers="de" >
+                <string name="paste_toast" >Aufkleber URL ist kopiert aus klemmtafel.
+                </string>
+                <string name="pref_name_summary" >Ihren name zu sehen in Aufklebers
+                </string>
+                <string name="action_settings" >Einstelligen
+                </string>
+                <string name="paste_button" >Sende
+                </string>
+                <string name="pref_name" >Name
+                </string>
+                <string name="pref_clipboard_summary" >Kopiert das  Aufkleber URL automatisch auch Klemmtafel.
+                </string>
+                <string name="paste_noText" >Bitte fielen sie die text Felden aus
+                </string>
+                <string name="paste_upload" >Uploaden. Einen Augenblick Geduld, bitte
+                </string>
+                <string name="paste_content" >Aufkleber Einhalt:
+                </string>
+                <string name="pref_clipboard" >Kopieren auch Klemmtafel.
+                </string>
+                <string name="paste_url_label" >Aufkleber URL:
+                </string>
+                <string name="paste_name" >Aufkleber Name:
+                </string>
+                <string name="paste_url" ></string>
+            </file>
+            <file
+                name="preferences"
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/xml/preferences.xml"
+                qualifiers=""
+                type="xml" />
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values-nl/strings.xml"
+                qualifiers="nl" >
+                <string name="pref_name" >Naam
+                </string>
+                <string name="paste_upload" >Uploaden. Even geduld a.u.b.
+                </string>
+                <string name="paste_noText" >Vul de tekst velden in a.u.b.
+                </string>
+                <string name="paste_url_label" >Klever URL:
+                </string>
+                <string name="paste_content" >Klever Inhoud:
+                </string>
+                <string name="paste_button" >Verstuur
+                </string>
+                <string name="action_settings" >Instellingen
+                </string>
+                <string name="pref_clipboard_summary" >Kopieer de klever URL automatisch naar het klembord
+                </string>
+                <string name="paste_name" >Klever Naam:
+                </string>
+                <string name="pref_clipboard" >Kopieer naar klembord
+                </string>
+                <string name="paste_toast" >Klever URL werd gekopieerd naar het klembord.
+                </string>
+                <string name="paste_url" ></string>
+                <string name="pref_name_summary" >Uw naam getoond in klevertjes
+                </string>
+            </file>
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values-en/strings.xml"
+                qualifiers="en" >
+                <string name="pref_name" >Name
+                </string>
+                <string name="paste_name" >Paste Name:
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="pref_clipboard" >Copy to clipboard
+                </string>
+                <string name="paste_url" ></string>
+                <string name="paste_noText" >Please fill in the text boxes
+                </string>
+                <string name="paste_url_label" >Paste URL:
+                </string>
+                <string name="paste_content" >Paste Content:
+                </string>
+                <string name="paste_upload" >Uploading paste. Please wait
+                </string>
+                <string name="pref_name_summary" >Your name to be shown on pastes
+                </string>
+                <string name="paste_toast" >Paste URL has been copied to the clipboard.
+                </string>
+                <string name="paste_button" >Paste!
+                </string>
+                <string name="pref_clipboard_summary" >Automatically copy the paste URL to the clipboard
+                </string>
+            </file>
+            <file
+                path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/res/values-fr/strings.xml"
+                qualifiers="fr" >
+                <string name="paste_noText" >Remplit les boxes de texte s.v.p.
+                </string>
+                <string name="paste_url" ></string>
+                <string name="paste_button" >Envoye
+                </string>
+                <string name="action_settings" >Paramètres
+                </string>
+                <string name="pref_clipboard" >Copié aux presse-papiers
+                </string>
+                <string name="pref_clipboard_summary" >Copié l\'étiquette URL aux presse-papiers automatique
+                </string>
+                <string name="pref_name_summary" >Votre nom sur les étiquettes
+                </string>
+                <string name="paste_name" >Etiquette Nom:
+                </string>
+                <string name="paste_upload" >Uploading. Attendez s.v.p.
+                </string>
+                <string name="pref_name" >Nom
+                </string>
+                <string name="paste_toast" >Etiquette URL est copié aux presse-papiers.
+                </string>
+                <string name="paste_url_label" >Etiquette URL:
+                </string>
+                <string name="paste_content" >Etiquette Contenu:
+                </string>
+            </file>
+        </source>
+        <source path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/build/res/rs/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/debug/res" />
+    </dataSet>
+
+</merger>
