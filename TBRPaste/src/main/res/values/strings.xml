@@ -4,6 +4,7 @@
     <!--App Name; DO NOT TRANSLATE-->
     <string name="app_name">Team BlueRidge Paste</string>
     <string name="app_name_short">TBR Paste</string>
+    <string name="version_name">2.0.0-beta3</string>
 
     <!--Main UI-->
     <string name="paste_name">Paste Name:</string>

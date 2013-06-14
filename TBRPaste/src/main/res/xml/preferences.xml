@@ -11,4 +11,10 @@
         android:title="@string/pref_clipboard"
         android:summary="@string/pref_clipboard_summary"
         android:defaultValue="true"/>
+
+    <!--TODO: Move ABOUT info to new UIFragment-->
+    <Preference
+        android:key="version_name"
+        android:title="App Version"
+        android:summary="@string/version_name"/>
 </PreferenceScreen>
