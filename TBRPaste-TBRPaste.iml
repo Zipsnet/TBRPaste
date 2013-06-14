@@ -14,45 +14,45 @@
         <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/TBRPaste/build/source/aidl/debug" />
-        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/TBRPaste/src/main/AndroidManifest.xml" />
-        <option name="RES_FOLDER_RELATIVE_PATH" value="/TBRPaste/src/main/res" />
-        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/TBRPaste/src/main/assets" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/TBRPaste">
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/res" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/resources" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/resources" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/assets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/res" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/res/rs/debug" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/rs/debug" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/aidl/debug" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/jni" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/buildConfig/debug" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/jni" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/assets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/r/debug" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/aidl/debug" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/rs/debug" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/buildConfig/debug" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/res/rs/debug" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/r/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/aidl/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/rs/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/buildConfig/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/res/rs/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/assets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/jni" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/res" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/debug/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/assets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/jni" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/res" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/assets" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/jni" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/assets" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/res" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/r/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/res/rs/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/TBRPaste/build/source/aidl/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/TBRPaste/src/instrumentTest/resources" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/TBRPaste/build/apk" />
       <excludeFolder url="file://$MODULE_DIR$/TBRPaste/build/assets" />

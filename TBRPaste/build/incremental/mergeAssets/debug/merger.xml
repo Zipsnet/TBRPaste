@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/main/assets" />
+        <source path="/Users/kyle/Documents/AndroidStudio/TBRPaste/TBRPaste/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/kyle/AndroidStudio/workspace/TBRPaste/TBRPaste/src/debug/assets" />
+        <source path="/Users/kyle/Documents/AndroidStudio/TBRPaste/TBRPaste/src/debug/assets" />
     </dataSet>
 
 </merger>
