@@ -66,7 +66,7 @@ public class MainActivity extends Activity implements OnClickListener {
         pasteContentEditText = (EditText) findViewById(R.id.editText2);
         pasteContentString = pasteContentEditText.getText().toString();
 
-        //if paste content is not empty, upload, if not, just end with error in url label
+        //if paste content is not empty, upload; else, just end with error in url label
         if (!pasteContentString.isEmpty()) {
            //Execute paste upload in separate thread
             new uploadPaste().execute();
@@ -133,9 +133,8 @@ public class MainActivity extends Activity implements OnClickListener {
         protected String doInBackground(String... args) {
             HttpClient httpclient = new DefaultHttpClient();
             HttpPost httppost = new HttpPost("http://paste.teamblueridge.org/api/create");
-            //if no paste content, do not even send to server
             try {
-                // Add your data
+                // HTTP Header data
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
                 nameValuePairs.add(new BasicNameValuePair("title", pasteNameString));
                 nameValuePairs.add(new BasicNameValuePair("text", pasteContentString));
@@ -163,7 +162,7 @@ public class MainActivity extends Activity implements OnClickListener {
         protected void onPostExecute(String paste_url) {
             // dismiss the dialog after getting all products
             pDialog.dismiss();
-            //If, according to settings, paste URL should be copied to clipboard
+            //If, according to settings, paste URL should be copied to clipboard, do it
             if (prefs.getBoolean("pref_clipboard", true)) {
                 //Copy pasteUrl to clipboard
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
@@ -172,7 +171,7 @@ public class MainActivity extends Activity implements OnClickListener {
             }
 
 
-            // finally set the URL for the user
+            // Finally display paste URL
             runOnUiThread(new Runnable() {
                 public void run() {
                     //Create a clickable link from pasteUrlString for user (opens in web browser)
