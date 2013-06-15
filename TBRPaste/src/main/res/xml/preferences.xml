@@ -8,6 +8,11 @@
             android:title="@string/pref_name"
             android:summary="@string/pref_name_summary"
             android:defaultValue="Mobile User"/>
+        <EditTextPreference
+            android:key="pref_domain"
+            android:title="@string/pref_domain"
+            android:summary="@string/pref_domain_summary"
+            android:defaultValue="paste.teamblueridge.org"/>
         <CheckBoxPreference
             android:key="pref_clipboard"
             android:title="@string/pref_clipboard"
