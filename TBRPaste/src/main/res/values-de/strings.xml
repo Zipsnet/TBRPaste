@@ -12,10 +12,14 @@
     <string name="paste_upload">Uploaden. Einen Augenblick Geduld, bitte</string>
 
     <!--Preferences-->
+    <string name="pref_general">Allgemeine</string>    
     <string name="pref_name">Name</string>
     <string name="pref_name_summary">Ihren name zu sehen in Aufklebers</string>
     <string name="pref_clipboard">Kopieren auch Klemmtafel.</string>
     <string name="pref_clipboard_summary">Kopiert das Aufkleber URL automatisch auch Klemmtafel.</string>
+    <string name="pref_about">Über</string>
+    <string name="pref_version">Version</string>
+    
 
     <!--Menu-->
     <string name="action_settings">Einstelligen</string>

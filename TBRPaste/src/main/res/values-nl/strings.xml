@@ -12,10 +12,13 @@
     <string name="paste_upload">Uploaden. Even geduld a.u.b.</string>
 
     <!--Preferences-->
+    <string name="pref_general">Algemeen</string>    
     <string name="pref_name">Naam</string>
     <string name="pref_name_summary">Uw naam getoond in klevertjes</string>
     <string name="pref_clipboard">Kopieer naar klembord</string>
     <string name="pref_clipboard_summary">Kopieer de klever URL automatisch naar het klembord</string>
+    <string name="pref_about">Over</string>
+    <string name="pref_version">Versie</string>
 
     <!--Menu-->
     <string name="action_settings">Instellingen</string>
