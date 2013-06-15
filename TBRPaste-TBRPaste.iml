@@ -4,8 +4,6 @@
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
         <option name="GRADLE_PROJECT_PATH" value=":TBRPaste" />
-        <option name="PROJECT_ABSOLUTE_PATH" value="$MODULE_DIR$" />
-        <option name="GRADLE_HOME_DIR_PATH" />
       </configuration>
     </facet>
     <facet type="android" name="Android">
@@ -66,7 +64,7 @@
       <excludeFolder url="file://$MODULE_DIR$/TBRPaste/build/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/TBRPaste/build/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="Android 4.2.2" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android SDK" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="android-support-v4" level="project" />
   </component>
