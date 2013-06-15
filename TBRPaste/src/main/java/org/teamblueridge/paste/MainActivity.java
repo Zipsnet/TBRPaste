@@ -44,6 +44,8 @@ public class MainActivity extends Activity implements OnClickListener {
     String pasteContentString;
     String pasteUrlString;
     String userName;
+    String pasteDomain;
+    String pasteURL;
     String uploadingText;
     String toastText;
     SharedPreferences prefs;
@@ -132,7 +134,13 @@ public class MainActivity extends Activity implements OnClickListener {
         // post the content in the background while showing the dialog
         protected String doInBackground(String... args) {
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://paste.teamblueridge.org/api/create");
+                if (!prefs.getString("pref_domain", "").isEmpty()) {
+                    pasteDomain = prefs.getString("pref_domain", "");
+                } else {
+                    pasteDomain = "paste.teamblueridge.org";
+                }
+            String pasteURL = "http://" + pasteDomain + "/api/create";
+            HttpPost httppost = new HttpPost(pasteURL);
             try {
                 // HTTP Header data
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
