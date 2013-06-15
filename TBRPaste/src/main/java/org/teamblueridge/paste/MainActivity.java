@@ -2,7 +2,11 @@ package org.teamblueridge.paste;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.*;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -17,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -70,7 +75,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
         //if paste content is not empty, upload; else, just end with error in url label
         if (!pasteContentString.isEmpty()) {
-           //Execute paste upload in separate thread
+            //Execute paste upload in separate thread
             new uploadPaste().execute();
         } else {
             pasteUrlLabel.setText(R.string.paste_noText);
@@ -134,11 +139,11 @@ public class MainActivity extends Activity implements OnClickListener {
         // post the content in the background while showing the dialog
         protected String doInBackground(String... args) {
             HttpClient httpclient = new DefaultHttpClient();
-                if (!prefs.getString("pref_domain", "").isEmpty()) {
-                    pasteDomain = prefs.getString("pref_domain", "");
-                } else {
-                    pasteDomain = "paste.teamblueridge.org";
-                }
+            if (!prefs.getString("pref_domain", "").isEmpty()) {
+                pasteDomain = prefs.getString("pref_domain", "");
+            } else {
+                pasteDomain = "paste.teamblueridge.org";
+            }
             String pasteURL = "http://" + pasteDomain + "/api/create";
             HttpPost httppost = new HttpPost(pasteURL);
             try {
@@ -186,7 +191,7 @@ public class MainActivity extends Activity implements OnClickListener {
                     String linkText = "<a href=\"" + pasteUrlString + "\">" + pasteUrlString + "</a>";
                     pasteUrlLabel.setText(Html.fromHtml(linkText));
                     pasteUrlLabel.setMovementMethod(LinkMovementMethod.getInstance());
-                 }
+                }
             });
 
         }
