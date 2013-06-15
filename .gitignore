@@ -1,3 +1,6 @@
 local.properties
 Thumbs.db
 TBRPaste/TBRPaste-TBRPaste.apk
+*.apk
+TBRPaste/build/
+.idea/dictionaries/
