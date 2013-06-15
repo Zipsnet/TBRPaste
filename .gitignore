@@ -4,3 +4,6 @@ TBRPaste/TBRPaste-TBRPaste.apk
 *.apk
 TBRPaste/build/
 .idea/dictionaries/
+.gradle/1.6/
+.idea/workspace.xml
+.idea/misc.xml
