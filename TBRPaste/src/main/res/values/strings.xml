@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--General-->
+    <!--General; DO NOT TRANSLATE-->
     <string name="app_name">Team BlueRidge Paste</string>
     <string name="app_name_short">TBR Paste</string>
     <string name="version_name">2.0.0-beta3</string>
