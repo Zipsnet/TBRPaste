@@ -19,7 +19,6 @@
     <string name="pref_clipboard_summary">Kopiert das Aufkleber URL automatisch auch Klemmtafel.</string>
     <string name="pref_about">Über</string>
     <string name="pref_version">Version</string>
-    
 
     <!--Menu-->
     <string name="action_settings">Einstelligen</string>
