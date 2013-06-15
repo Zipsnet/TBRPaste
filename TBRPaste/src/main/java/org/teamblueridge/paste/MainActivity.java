@@ -15,9 +15,6 @@ import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,10 +35,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+public class MainActivity extends Activity {
 
-public class MainActivity extends Activity implements OnClickListener {
-
-    Button pasteButton;
     TextView pasteUrlLabel;
     EditText pasteNameEditText;
     String pasteNameString;
@@ -50,7 +45,7 @@ public class MainActivity extends Activity implements OnClickListener {
     String pasteUrlString;
     String userName;
     String pasteDomain;
-    String pasteURL;
+    String uploadUrl;
     String uploadingText;
     String toastText;
     SharedPreferences prefs;
@@ -61,38 +56,6 @@ public class MainActivity extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        pasteButton = (Button) findViewById(R.id.button1);
-        pasteButton.setOnClickListener(this);
-    }
-
-    public void onClick(View view) {
-
-        pasteUrlLabel = (TextView) findViewById(R.id.textView4);
-        pasteNameEditText = (EditText) findViewById(R.id.editText1);
-        pasteNameString = pasteNameEditText.getText().toString();
-        pasteContentEditText = (EditText) findViewById(R.id.editText2);
-        pasteContentString = pasteContentEditText.getText().toString();
-
-        //if paste content is not empty, upload; else, just end with error in url label
-        if (!pasteContentString.isEmpty()) {
-            //Execute paste upload in separate thread
-            new uploadPaste().execute();
-        } else {
-            pasteUrlLabel.setText(R.string.paste_noText);
-        }
-
-        //Clear out the old data in the paste
-        pasteNameEditText.setText("");
-        pasteContentEditText.setText("");
-
-        //Call toast as pasteUrl is being copied to the clipboard && if paste URL should be copied
-        if (!pasteContentString.isEmpty() && prefs.getBoolean("pref_clipboard", true)) {
-            toastText = getResources().getString(R.string.paste_toast);
-            Context context = getApplicationContext();
-            CharSequence text = toastText;
-            int duration = Toast.LENGTH_SHORT;
-            Toast.makeText(context, text, duration).show();
-        }
     }
 
     public void onResume() {
@@ -117,7 +80,37 @@ public class MainActivity extends Activity implements OnClickListener {
             startActivity(new Intent(this, SettingsActivity.class));
             return true;
         } else {
-            return false;
+            if (item.getItemId() == R.id.menu_paste) {
+                pasteUrlLabel = (TextView) findViewById(R.id.textView4);
+                pasteNameEditText = (EditText) findViewById(R.id.editText1);
+                pasteNameString = pasteNameEditText.getText().toString();
+                pasteContentEditText = (EditText) findViewById(R.id.editText2);
+                pasteContentString = pasteContentEditText.getText().toString();
+
+                //if paste content is not empty, upload; else, just end with error in url label
+                if (!pasteContentString.isEmpty()) {
+                    //Execute paste upload in separate thread
+                    new uploadPaste().execute();
+                    //Call toast as pasteUrl is being copied to the clipboard && if paste URL should be copied
+                    if (prefs.getBoolean("pref_clipboard", true)) {
+                        toastText = getResources().getString(R.string.paste_toast);
+                        Context context = getApplicationContext();
+                        CharSequence text = toastText;
+                        int duration = Toast.LENGTH_SHORT;
+                        Toast.makeText(context, text, duration).show();
+                    }
+                } else {
+                    pasteUrlLabel.setText(R.string.paste_noText);
+                }
+
+                //Clear out the old data in the paste
+                pasteNameEditText.setText("");
+                pasteContentEditText.setText("");
+
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 
@@ -144,8 +137,8 @@ public class MainActivity extends Activity implements OnClickListener {
             } else {
                 pasteDomain = "paste.teamblueridge.org";
             }
-            String pasteURL = "http://" + pasteDomain + "/api/create";
-            HttpPost httppost = new HttpPost(pasteURL);
+            uploadUrl = "http://" + pasteDomain + "/api/create";
+            HttpPost httppost = new HttpPost(uploadUrl);
             try {
                 // HTTP Header data
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
@@ -191,6 +184,7 @@ public class MainActivity extends Activity implements OnClickListener {
                     String linkText = "<a href=\"" + pasteUrlString + "\">" + pasteUrlString + "</a>";
                     pasteUrlLabel.setText(Html.fromHtml(linkText));
                     pasteUrlLabel.setMovementMethod(LinkMovementMethod.getInstance());
+
                 }
             });
 

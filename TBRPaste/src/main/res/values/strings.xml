@@ -7,8 +7,8 @@
     <string name="version_name">2.0.0-beta4</string>
 
     <!--Main UI-->
-    <string name="paste_name">Paste Name:</string>
-    <string name="paste_content">Paste Content:</string>
+    <string name="paste_name">Paste Name</string>
+    <string name="paste_content">Paste Content</string>
     <string name="paste_url_label">Paste URL:</string>
     <string name="paste_button">Paste!</string>
     <string name="paste_url"/>
