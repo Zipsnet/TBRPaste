@@ -28,16 +28,11 @@
                  android:data="https://github.com/claudehohl/Stikked"
                  />
         </PreferenceScreen>
-        <PreferenceScreen android:title="Team BlueRidge">
+        <PreferenceScreen android:title="@string/pref_version" android:summary="@string/version_name">
             <intent
                  android:action="android.intent.action.VIEW"
                  android:data="https://www.teamblueridge.org"
                  />
         </PreferenceScreen>
-        <Preference
-            android:key="version_name"
-            android:title="@string/pref_version"
-            android:summary="@string/version_name"/>
-    </PreferenceCategory>
 
 </PreferenceScreen>
