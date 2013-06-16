@@ -5,19 +5,24 @@
     <string name="paste_name">Имя вставки</string>
     <string name="paste_content">Содержание вставки</string>
     <string name="paste_url_label">URL вставки:</string>
-    <string name="paste_button">Вставить!</string>
     <string name="paste_url"/>
     <string name="paste_noText">Пожалуйста. заполните текстовые поля</string>
     <string name="paste_toast">URL вставки скопирован в буфер обмена.</string>
     <string name="paste_upload">Выгрузка вставки. Пожалуйста, подождите</string>
 
     <!--Preferences-->
+    <string name="pref_general">Oбщий</string>
     <string name="pref_name">Имя</string>
     <string name="pref_name_summary">Ваше имя, отображаемое на вставках</string>
+    <string name="pref_domain">Domain</string>
+    <string name="pref_domain_summary">URL where Stikked is installed</string>
     <string name="pref_clipboard">Скопировать в буфер обмена</string>
     <string name="pref_clipboard_summary">Автоматически копировать URL вставки в буфер обмена</string>
+    <string name="pref_about">O</string>
+    <string name="pref_version">версия</string>
 
     <!--Menu-->
+    <string name="action_paste">Вставить!</string>
     <string name="action_settings">Настройки</string>
 
 </resources>

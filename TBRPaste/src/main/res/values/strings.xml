@@ -10,7 +10,6 @@
     <string name="paste_name">Paste Name</string>
     <string name="paste_content">Paste Content</string>
     <string name="paste_url_label">Paste URL:</string>
-    <string name="paste_button">Paste!</string>
     <string name="paste_url"/>
     <string name="paste_noText">Please fill in the text boxes</string>
     <string name="paste_toast">Paste URL has been copied to the clipboard.</string>
@@ -28,6 +27,7 @@
     <string name="pref_version">Version</string>
 
     <!--Menu-->
+    <string name="action_paste">Paste!</string>
     <string name="action_settings">Settings</string>
 
 </resources>

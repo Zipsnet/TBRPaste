@@ -5,7 +5,6 @@
     <string name="paste_name">Aufkleber Name</string>
     <string name="paste_content">Aufkleber Einhalt</string>
     <string name="paste_url_label">Aufkleber URL:</string>
-    <string name="paste_button">Sende</string>
     <string name="paste_url"/>
     <string name="paste_noText">Bitte fielen sie die text Felden aus</string>
     <string name="paste_toast">Aufkleber URL ist kopiert aus Klemmtafel.</string>
@@ -23,6 +22,7 @@
     <string name="pref_version">Version</string>
 
     <!--Menu-->
+    <string name="action_paste">Sende</string>
     <string name="action_settings">Einstelligen</string>
 
 </resources>

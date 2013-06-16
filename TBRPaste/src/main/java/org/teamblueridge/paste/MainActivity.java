@@ -80,7 +80,7 @@ public class MainActivity extends Activity {
             startActivity(new Intent(this, SettingsActivity.class));
             return true;
         } else {
-            if (item.getItemId() == R.id.menu_paste) {
+            if (item.getItemId() == R.id.action_paste) {
                 pasteUrlLabel = (TextView) findViewById(R.id.textView4);
                 pasteNameEditText = (EditText) findViewById(R.id.editText1);
                 pasteNameString = pasteNameEditText.getText().toString();
