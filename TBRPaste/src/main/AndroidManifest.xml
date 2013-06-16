@@ -24,10 +24,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.teamblueridge.paste.SettingsActivity">
-                <intent-filter android:label="@string/action_settings">
-                </intent-filter>
-            </activity>
+            android:name="org.teamblueridge.paste.SettingsActivity"
+            android:label="@string/action_settings"
+        </activity>
     </application>
 
 </manifest>
