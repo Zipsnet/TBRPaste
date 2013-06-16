@@ -14,9 +14,9 @@
             android:summary="@string/pref_domain_summary"
             android:defaultValue="paste.teamblueridge.org"/>
         <CheckBoxPreference
-            android:key="pref_clipboard"
-            android:title="@string/pref_clipboard"
-            android:summary="@string/pref_clipboard_summary"
+            android:key="pref_url"
+            android:title="@string/pref_url"
+            android:summary="@string/pref_url_summary"
             android:defaultValue="true"/>
     </PreferenceCategory>
 
@@ -34,5 +34,6 @@
                  android:data="https://www.teamblueridge.org"
                  />
         </PreferenceScreen>
+    </PreferenceCategory>
 
 </PreferenceScreen>

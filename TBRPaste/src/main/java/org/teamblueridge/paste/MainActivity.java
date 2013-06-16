@@ -13,9 +13,11 @@ import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
+import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,6 +40,7 @@ import java.util.List;
 public class MainActivity extends Activity {
 
     TextView pasteUrlLabel;
+    TextView urlTextView;
     EditText pasteNameEditText;
     String pasteNameString;
     EditText pasteContentEditText;
@@ -66,6 +69,27 @@ public class MainActivity extends Activity {
         } else {
             userName = "Mobile User";
         }
+
+        pasteUrlLabel = (TextView) findViewById(R.id.textView4);
+        pasteNameEditText = (EditText) findViewById(R.id.editText1);
+        pasteNameString = pasteNameEditText.getText().toString();
+        pasteContentEditText = (EditText) findViewById(R.id.editText2);
+        pasteContentString = pasteContentEditText.getText().toString();
+        urlTextView = (TextView) findViewById(R.id.textView3);
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+        //Hide URL text depending on preferences
+        if (!prefs.getBoolean("pref_url", true)) {
+            pasteUrlLabel.setVisibility(View.GONE);
+            urlTextView.setVisibility(View.GONE);
+            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)urlTextView.getLayoutParams();
+            params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+            params.addRule(RelativeLayout.BELOW, R.id.editText1);
+            urlTextView.setLayoutParams(params);
+        } else {
+            setContentView(R.layout.activity_main);
+        }
+
     }
 
     @Override
@@ -82,25 +106,36 @@ public class MainActivity extends Activity {
         } else {
             if (item.getItemId() == R.id.action_paste) {
                 pasteUrlLabel = (TextView) findViewById(R.id.textView4);
+                //Hide URL text depending on preferences
                 pasteNameEditText = (EditText) findViewById(R.id.editText1);
                 pasteNameString = pasteNameEditText.getText().toString();
                 pasteContentEditText = (EditText) findViewById(R.id.editText2);
                 pasteContentString = pasteContentEditText.getText().toString();
 
-                //if paste content is not empty, upload; else, just end with error in url label
+                //Upload if paste content is not empty, otherwise show error message
                 if (!pasteContentString.isEmpty()) {
                     //Execute paste upload in separate thread
                     new uploadPaste().execute();
-                    //Call toast as pasteUrl is being copied to the clipboard && if paste URL should be copied
-                    if (prefs.getBoolean("pref_clipboard", true)) {
-                        toastText = getResources().getString(R.string.paste_toast);
+
+                    //Call toast that pasteUrl is copied to the clipboard
+                    toastText = getResources().getString(R.string.paste_toast);
+                    Context context = getApplicationContext();
+                    CharSequence text = toastText;
+                    int duration = Toast.LENGTH_SHORT;
+                    Toast.makeText(context, text, duration).show();
+                } else {
+                    //Call toast after error message if URL is hidden
+                    if (prefs.getBoolean("pref_url", true)) {
+                        pasteUrlLabel.setText(R.string.paste_noText);
+                    } else {
+                        toastText = getResources().getString(R.string.paste_noText);
                         Context context = getApplicationContext();
                         CharSequence text = toastText;
                         int duration = Toast.LENGTH_SHORT;
                         Toast.makeText(context, text, duration).show();
                     }
-                } else {
-                    pasteUrlLabel.setText(R.string.paste_noText);
+
+
                 }
 
                 //Clear out the old data in the paste
@@ -166,29 +201,26 @@ public class MainActivity extends Activity {
 
         //Since we used a dialog, we need to disable it
         protected void onPostExecute(String paste_url) {
-            // dismiss the dialog after getting all products
+            //Dismiss the dialog after getting all products
             pDialog.dismiss();
-            //If, according to settings, paste URL should be copied to clipboard, do it
-            if (prefs.getBoolean("pref_clipboard", true)) {
-                //Copy pasteUrl to clipboard
-                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText("TBRPaste", pasteUrlString);
-                clipboard.setPrimaryClip(clip);
-            }
+            //Copy pasteUrl to clipboard
+            ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+            ClipData clip = ClipData.newPlainText("TBRPaste", pasteUrlString);
+            clipboard.setPrimaryClip(clip);
 
-
-            // Finally display paste URL
+            //Display paste URL if allowed in preferences
             runOnUiThread(new Runnable() {
                 public void run() {
                     //Create a clickable link from pasteUrlString for user (opens in web browser)
-                    String linkText = "<a href=\"" + pasteUrlString + "\">" + pasteUrlString + "</a>";
-                    pasteUrlLabel.setText(Html.fromHtml(linkText));
-                    pasteUrlLabel.setMovementMethod(LinkMovementMethod.getInstance());
+                    if (prefs.getBoolean("pref_url", true)) {
+                        String linkText = "<a href=\"" + pasteUrlString + "\">" + pasteUrlString + "</a>";
+                        pasteUrlLabel.setText(Html.fromHtml(linkText));
+                        pasteUrlLabel.setMovementMethod(LinkMovementMethod.getInstance());
+                    }
 
                 }
             });
-
         }
-
     }
+
 }

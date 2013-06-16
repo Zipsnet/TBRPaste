@@ -16,8 +16,8 @@
     <string name="pref_name_summary">Uw naam getoond in klevertjes</string>
     <string name="pref_domain">Domein</string>
     <string name="pref_domain_summary">URL waar Stikked is geïnstalleerd</string>
-    <string name="pref_clipboard">Kopieer naar klembord</string>
-    <string name="pref_clipboard_summary">Kopieer de klever URL automatisch naar het klembord</string>
+    <string name="pref_url">Toon URL</string>
+    <string name="pref_url_summary">Een klikbare link verschijnt onder de inhoud box</string>
     <string name="pref_about">Over</string>
     <string name="pref_version">Versie</string>
 

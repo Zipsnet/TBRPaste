@@ -8,6 +8,6 @@
         android:showAsAction="ifRoom|withText" />/>
     <item android:id="@+id/action_paste"
         android:icon="@drawable/send"
-        android:title="@string/paste_button"
+        android:title="@string/action_paste"
         android:showAsAction="always|withText" />
 </menu>
