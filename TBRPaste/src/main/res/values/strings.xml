@@ -2,8 +2,7 @@
 <resources>
 
     <!--General; DO NOT TRANSLATE-->
-    <string name="app_name">Team BlueRidge Paste</string>
-    <string name="app_name_short">TBR Paste</string>
+    <string name="app_name">Paste It</string>
     <string name="version_name">2.0.0-beta4</string>
 
     <!--Main UI-->
