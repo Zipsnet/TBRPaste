@@ -1,8 +1,12 @@
 local.properties
 Thumbs.db
-TBRPaste/TBRPaste-TBRPaste.apk
 *.apk
+*.glass
+*.iml
+*.iws
 TBRPaste/build/
+TBRPaste/src/main/gen/org/teamblueridge/paste/*
+.gradle/
+.idea/workspace.xml
+.idea/tasks.xml
 .idea/dictionaries/
-.gradle/1.6/*
-.idea/
