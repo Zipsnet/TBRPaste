@@ -17,7 +17,7 @@
     <string name="pref_domain">Domain</string>
     <string name="pref_domain_summary">URL wo Stikked ist installiert</string>
     <string name="pref_url">Ton URL</string>
-    <string name="pref_url_summary">Ein klickbaren Link erscheint unter dem Inhalt Feld</string>
+    <string name="pref_url_summary">Erscheint unter dem Inhalt Feld</string>
     <string name="pref_about">Über</string>
     <string name="pref_version">Version</string>
 

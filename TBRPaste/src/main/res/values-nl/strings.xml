@@ -17,7 +17,7 @@
     <string name="pref_domain">Domein</string>
     <string name="pref_domain_summary">URL waar Stikked is geïnstalleerd</string>
     <string name="pref_url">Toon URL</string>
-    <string name="pref_url_summary">Een klikbare link verschijnt onder de inhoud box</string>
+    <string name="pref_url_summary">Verschijnt onder de inhoud box</string>
     <string name="pref_about">Over</string>
     <string name="pref_version">Versie</string>
 
