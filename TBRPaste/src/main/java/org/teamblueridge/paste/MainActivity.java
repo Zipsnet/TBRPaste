@@ -13,9 +13,9 @@ import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -82,7 +82,7 @@ public class MainActivity extends Activity {
         if (!prefs.getBoolean("pref_url", true)) {
             pasteUrlLabel.setVisibility(View.GONE);
             urlTextView.setVisibility(View.GONE);
-            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)urlTextView.getLayoutParams();
+            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) urlTextView.getLayoutParams();
             params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
             params.addRule(RelativeLayout.BELOW, R.id.editText1);
             urlTextView.setLayoutParams(params);
@@ -134,8 +134,6 @@ public class MainActivity extends Activity {
                         int duration = Toast.LENGTH_SHORT;
                         Toast.makeText(context, text, duration).show();
                     }
-
-
                 }
 
                 //Clear out the old data in the paste
