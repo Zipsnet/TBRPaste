@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -59,17 +60,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    public void onResume() {
-        super.onResume();
-        prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!prefs.getString("pref_name", "").isEmpty()) {
-            userName = prefs.getString("pref_name", "");
-        } else {
-            userName = "Mobile User";
-        }
-
+        //Just define the variables here.
         pasteUrlLabel = (TextView) findViewById(R.id.textView4);
         pasteNameEditText = (EditText) findViewById(R.id.editText1);
         pasteNameString = pasteNameEditText.getText().toString();
@@ -77,6 +69,16 @@ public class MainActivity extends Activity {
         pasteContentString = pasteContentEditText.getText().toString();
         urlTextView = (TextView) findViewById(R.id.textView3);
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+    }
+
+    public void onResume() {
+        super.onResume();
+        if (!prefs.getString("pref_name", "").isEmpty()) {
+            userName = prefs.getString("pref_name", "");
+        } else {
+            userName = "Mobile User";
+        }
 
         //Hide URL text depending on preferences
         if (!prefs.getBoolean("pref_url", true)) {
@@ -105,12 +107,6 @@ public class MainActivity extends Activity {
             return true;
         } else {
             if (item.getItemId() == R.id.action_paste) {
-                pasteUrlLabel = (TextView) findViewById(R.id.textView4);
-                //Hide URL text depending on preferences
-                pasteNameEditText = (EditText) findViewById(R.id.editText1);
-                pasteNameString = pasteNameEditText.getText().toString();
-                pasteContentEditText = (EditText) findViewById(R.id.editText2);
-                pasteContentString = pasteContentEditText.getText().toString();
 
                 //Upload if paste content is not empty, otherwise show error message
                 if (!pasteContentString.isEmpty()) {

@@ -3,7 +3,7 @@
 
     <!--General; DO NOT TRANSLATE-->
     <string name="app_name">Paste It</string>
-    <string name="version_name">2.0.0-beta4</string>
+    <string name="version_name">2.0.1-beta1</string>
 
     <!--Main UI-->
     <string name="paste_name">Paste Name</string>

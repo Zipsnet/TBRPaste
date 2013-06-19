@@ -7,12 +7,14 @@
             android:key="pref_name"
             android:title="@string/pref_name"
             android:summary="@string/pref_name_summary"
-            android:defaultValue="Mobile User"/>
+            android:defaultValue="Mobile User"
+            android:inputType="textPersonName"/>
         <EditTextPreference
             android:key="pref_domain"
             android:title="@string/pref_domain"
             android:summary="@string/pref_domain_summary"
-            android:defaultValue="paste.teamblueridge.org"/>
+            android:defaultValue="paste.teamblueridge.org"
+            android:inputType="textUri"/>
         <CheckBoxPreference
             android:key="pref_url"
             android:title="@string/pref_url"
