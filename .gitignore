@@ -1,12 +1,4 @@
-local.properties
-Thumbs.db
-*.apk
-*.glass
-*.iml
-*.iws
-TBRPaste/build/
-TBRPaste/src/main/gen/org/teamblueridge/paste/*
-.gradle/
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/dictionaries/
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store

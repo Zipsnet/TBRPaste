@@ -1,7 +1,7 @@
 package org.teamblueridge.paste;
 
+
 import android.app.Activity;
-;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
