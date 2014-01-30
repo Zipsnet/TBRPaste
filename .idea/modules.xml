@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TBRPaste.iml" filepath="$PROJECT_DIR$/TBRPaste.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TBRPaste-TBRPaste.iml" filepath="$PROJECT_DIR$/TBRPaste-TBRPaste.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paste/paste.iml" filepath="$PROJECT_DIR$/paste/paste.iml" />
     </modules>
   </component>
 </project>
